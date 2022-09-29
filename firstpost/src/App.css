@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.navbar1{
+/* border: 1px solid red; */
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: sticky;
+top: 0;
+}
+.navbar1>img{
+  display: block;
+  margin: auto;
+}
+.navbar11{
+  margin-left: 400px;
+}
+.xyz:hover{
+  color: red;
+  font-weight: bold;
+}
+.footerdata>div{
+ /* border: 1px solid red; */
+ width: 25%;
+ padding-left: 10px;
+}
+
+.footerdata>div:nth-child(2){
+  border-left: 1px solid grey;
+  border-right: 1px solid grey ;
+ }
+
+ .footerdata>div:nth-child(3){
+ 
+  border-right: 1px solid grey ;
+ }
+.footerdata>div>h4{
+  font-weight: bold;
+  font-size: 16px;
+}
+.footerdata>div>h4~p{
+  color: grey;
+  margin-top: -5px;
+  font-size: 14px;
+}
+
+.sidebar>h4{
+  /* border: 1px solid red; */
+  font-size: 24px;
+}
+
+.sidebar>h4+div{
+  background-color: yellow;
+  height: 6px;
+  width: 60%;
+  margin: auto;
+  margin-top: -35px;
+  margin-bottom: 5px;
+}
+
+.login>h4{
+ text-align: start;
+ padding-left: 10px;
+ font-size: 20px;
+}
+.login>h4+P{
+  text-align: start;
+  padding-left: 10px;
+  color: grey;
+  margin-top: -20px;
+}
+.login>h4+p+div>label{
+  /* border: 1px solid red; */
+  font-weight: bold;
+  margin: auto;
+  margin-left: -240px;
+  
+}
+.required:after {
+  content:" *";
+  color: red;
+
+}
+.login>h4+p+div+input{
+  margin-top: 10px;
+  width: 60%;
+  margin-left: -2px;
+  padding: 8px;
+}
+
+.login>h4+p+div+input+button{
+  padding: 8px 15px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(250,215,94);
+  border: 0px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.login>h4+p+div+input+button:hover{
+ color: rgb(250,215,94) ;
+ border: 2px solid rgb(250,215,94);
+ background-color: white;
+}
+
+
+.login>h4+p+div+input+button+p{
+  font-weight: bold;
+  color: rgb(82,146,20);
+}
+
+.buttondata>button{
+  padding: 5px 10px;
+}
+
+
+/* Country Page css */
+
+.country{
+  width: 45%;
+  /* height: 400px; */
+  /* border: 1px solid red; */
+  margin-left: 290px;
+  margin-bottom: 100px;
+}
+.country> h1+div{
+  height: 5px;
+  width: 50%;
+  background-color: yellow;
+  /* border: 1px solid green; */
+  margin: auto;
+  margin-top: -25px;
+  margin-bottom: 20px
+}
+
+
