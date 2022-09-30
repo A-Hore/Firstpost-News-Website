@@ -1,9 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import apikey from "./api";
+import { Link } from "react-router-dom";
 
 function getDataSide() {
   return axios.get(
-    `https://newsdata.io/api/1/news?apikey=pub_11743d4cb5fc69d1caf07ba902f42b0f21ee0&category=top&language=en`
+    `https://newsdata.io/api/1/news?apikey=${apikey}&category=top&language=en`
   );
 }
 
@@ -44,6 +46,7 @@ function SideBar() {
           >
             {el.description}
           </p>
+          <Link to={el.link}><button>READ MORE</button></Link>
         </div>
       ))}
       

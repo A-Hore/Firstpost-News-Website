@@ -1,18 +1,26 @@
 import { Route, Routes } from "react-router-dom";
 import Country from "./Country";
+import Politics from "./Politics";
+import World from "./World";
+import Auto from "./Auto";
+import Sports from "./Sports";
+import Tech from "./Tech";
+import Entertainment from "./Entertainment";
+import Food from "./Netra";
+import Business from "./Crypto";
 
 export default function AllRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Country/>}></Route>
-      <Route path="/world" element={<h1>world</h1>}></Route>
-      <Route path="/politics" element={<h1>politics</h1>}></Route>
-      <Route path="/auto" element={<h1>auto</h1>}></Route>
-      <Route path="/sports" element={<h1>sports</h1>}></Route>
-      <Route path="/entertainment" element={<h1>entertainment</h1>}></Route>
-      <Route path="/tech" element={<h1>tech</h1>}></Route>
-      <Route path="/crypto" element={<h1>crypto</h1>}></Route>
-      <Route path="/netra" element={<h1>netra</h1>}></Route>
+      <Route path="/world" element={<World/>}></Route>
+      <Route path="/politics" element={<Politics/>}></Route>
+      <Route path="/auto" element={<Auto />}></Route>
+      <Route path="/sports" element={<Sports/>}></Route>
+      <Route path="/entertainment" element={<Entertainment />}></Route>
+      <Route path="/tech" element={<Tech />}></Route>
+      <Route path="/crypto" element={<Business />}></Route>
+      <Route path="/netra" element={< Food />}></Route>
     </Routes>
   );
 }

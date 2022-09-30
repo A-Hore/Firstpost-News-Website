@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Loading from "../Components/Loading";
+import apikey from "../Components/api";
+import SliderShow from "../Components/SliderShow";
+import { SliderData } from "../Components/SliderData";
 
 function getData(page) {
   return axios.get(
-    `https://newsdata.io/api/1/news?apikey=pub_11743d4cb5fc69d1caf07ba902f42b0f21ee0&language=en,hi&country=in&category=politics&page=${page}`
+    `https://newsdata.io/api/1/news?apikey=${apikey}&language=en,hi&country=in&category=politics&page=${page}`
   );
 }
 
@@ -20,17 +23,17 @@ const Country = () => {
         setData(res.data.results);
       })
       .catch((err) => console.log(err))
-      .finally(()=>setLoading(false));
+      .finally(() => setLoading(false));
   }, [page]);
 
-  return (
-    loading==true ? <Loading /> :
+  return loading === true ? (
+    <Loading />
+  ) : (
     <div className="country">
+      <SliderShow slides={SliderData} />
       <h1>INDIA NEWS</h1>
       <div></div>
-      
-        
-      
+
       {data.map((el) => (
         <div
           style={{
@@ -68,6 +71,7 @@ const Country = () => {
                   fontWeight: "bold",
                   textTransform: "uppercase",
                   color: "grey",
+                  marginLeft: "-490px",
                 }}
               >
                 {el.country}
@@ -91,7 +95,7 @@ const Country = () => {
               }}
             >
               {!el.description
-                ? "af;jqerf erfoj3f34 34roi34rfnefq34o4fi34r"
+                ? "afrkrjqerf erfoj3f34 34roi34rfnefq34o4fi34r"
                 : el.description.slice(1, 158)}
               ...
             </p>

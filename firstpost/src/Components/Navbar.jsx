@@ -9,8 +9,8 @@ const Links = [
   { path: "/sports", title: "Sports" },
   { path: "/entertainment", title: "Entertainment" },
   { path: "/tech", title: "Tech" },
-  { path: "/crypto", title: "Crypto" },
-  { path: "/netra", title: "Netra" },
+  { path: "/crypto", title: "Business" },
+  { path: "/netra", title: "Health" },
 ];
 
 export default function Navbar() {

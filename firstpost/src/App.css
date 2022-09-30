@@ -10,6 +10,7 @@ align-items: center;
 justify-content: space-around;
 position: sticky;
 top: 0;
+z-index: 15;
 }
 .navbar1>img{
   display: block;
@@ -17,6 +18,7 @@ top: 0;
 }
 .navbar11{
   margin-left: 400px;
+  z-index: 15;
 }
 .xyz:hover{
   color: red;
@@ -116,7 +118,90 @@ top: 0;
 
 .buttondata>button{
   padding: 5px 10px;
+  color: white;
+  background-color: rgb(250,215,94) ;
+  border: 0px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 200px;
+  margin-left: 10px;
 }
+
+.buttondata>button:hover{
+  color: rgb(250,215,94) ;
+  border: 1px solid rgb(250,215,94);
+  background-color: white;
+  
+}
+.slider{
+  /* position: relative; */
+  /* height: 440px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*  */
+}
+
+.slim{
+  width: 550px;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.slda{
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: auto;
+  text-align: start;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  /* opacity: 0.05; */
+}
+
+.rightarrow{
+  position: absolute;
+  top: 40%;
+  right: 550px;
+  font-size: 3rem;
+  color: black;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.leftarrow{
+  position: absolute;
+  top: 40%;
+  left: 300px;
+  font-size: 3rem;
+  color: black;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+.slide{
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
 
 
 /* Country Page css */
@@ -127,15 +212,20 @@ top: 0;
   /* border: 1px solid red; */
   margin-left: 290px;
   margin-bottom: 100px;
+  /* border: 1px solid red; */
 }
 .country> h1+div{
   height: 5px;
   width: 50%;
   background-color: yellow;
-  /* border: 1px solid green; */
+  /* border: 2px solid green; */
   margin: auto;
   margin-top: -25px;
   margin-bottom: 20px
 }
+/* .country>h1+div+div{
+  border: 2px solid green;
+  border-radius: 10px;
+} */
 
 
