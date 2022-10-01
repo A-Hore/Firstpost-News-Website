@@ -8,6 +8,7 @@ import Tech from "./Tech";
 import Entertainment from "./Entertainment";
 import Food from "./Netra";
 import Business from "./Crypto";
+import SingleNewsPage from "./SingleNewsPage";
 
 export default function AllRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AllRoutes() {
       <Route path="/tech" element={<Tech />}></Route>
       <Route path="/crypto" element={<Business />}></Route>
       <Route path="/netra" element={< Food />}></Route>
+      <Route path="/:user_id" element={< SingleNewsPage />}></Route>
     </Routes>
   );
 }

@@ -6,7 +6,7 @@ function Footer() {
     <div
       style={{
         borderTop: "6px solid rgb(89,89,88)",
-        marginTop:"3990px"
+        marginTop:"3590px"
       }}
     >
       <div

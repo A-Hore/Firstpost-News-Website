@@ -4,6 +4,7 @@ import Loading from "../Components/Loading";
 import apikey from "../Components/api";
 import SliderShow from "../Components/SliderShow";
 import { SliderData } from "../Components/SliderData";
+import { Link } from "react-router-dom";
 
 function getData(page) {
   return axios.get(
@@ -39,6 +40,8 @@ const Country = () => {
           style={{
             /*border: "1px solid red ",*/ marginTop: "20px",
             boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+            position:"relative",
+            zIndex:"1"
           }}
         >
           <img
@@ -50,7 +53,7 @@ const Country = () => {
             }
             alt="News"
           />
-          <div
+          <div className="newsdata"
             style={{
               //   border: "1px solid green",
               width: "90%",
@@ -99,6 +102,7 @@ const Country = () => {
                 : el.description.slice(1, 158)}
               ...
             </p>
+           <Link to={`/${el.pubDate}`}> <button className="newsbtn"> READ MORE</button></Link>
           </div>
         </div>
       ))}

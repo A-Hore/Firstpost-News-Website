@@ -10,7 +10,8 @@ function Login() {
         width: "25%",
         marginLeft: "1100px",
         // height: "200px",
-        marginTop: "-6970px",
+        // marginTop: "-6840px",
+        marginTop: "-6750px",
       }}
     >
       <h4>Subscribe to our foreign policy newsletter</h4>

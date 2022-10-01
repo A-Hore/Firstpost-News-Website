@@ -5,8 +5,7 @@ import AllRoutes from "./Pages/AllRoutes";
 import Footer from "./Components/Footer";
 import SideBar from "./Components/SideBar";
 import Login from "./Components/Login";
-import SliderShow from "./Components/SliderShow";
-import { SliderData } from "./Components/SliderData";
+
 
 function App() {
   return (

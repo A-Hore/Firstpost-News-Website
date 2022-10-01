@@ -1,66 +1,20 @@
-// import React, { useEffect } from 'react'
-// import { useState } from 'react';
+import ReactPlayer from "react-player";
 
-// function Videodata(videoElement) {
-//   const [playerState, setPlayerState] = useState({
-//     isPlaying: false,
-//     progress: 0,
-//     speed: 1,
-//     isMuted: false,
-//   });
+import React from "react";
 
-//   const togglePlay = () => {
-//     setPlayerState({
-//       ...playerState,
-//       isPlaying: !playerState.isPlaying,
-//     });
-//   };
+function VideoData() {
+  return (
+    <div style={{marginTop:"10px"}}>
+        <ReactPlayer
+      width="100%"
+      height="200px"
+      
+      controls
+      url="https://youtu.be/9VqjcpCbbk8"
+    />
+    
+    </div>
+  );
+}
 
-//   useEffect(()=>{
-//     playerState.isPlaying
-//     ? videoElement.current.play()
-//     : videoElement.current.pause();
-//   },[playerState.isPlaying, videoElement])
-
-//   const handleOnTimeUpdate = () => {
-//     const progress = (videoElement.current.currentTime / videoElement.current.duration) * 100;
-//     setPlayerState({
-//       ...playerState,
-//       progress,
-//     });
-//   };
-
-//   const handleVideoProgress = (event) => {
-//     const manualChange = Number(event.target.value);
-//     videoElement.current.currentTime = (videoElement.current.duration / 100) * manualChange;
-//     setPlayerState({
-//       ...playerState,
-//       progress: manualChange,
-//     });
-//   };
-
-//   const handleVideoSpeed = (event) => {
-//     const speed = Number(event.target.value);
-//     videoElement.current.playbackRate = speed;
-//     setPlayerState({
-//       ...playerState,
-//       speed,
-//     });
-//   };
-  
-//   return {
-//     playerState,
-//     togglePlay,
-//     handleOnTimeUpdate,
-//     handleVideoProgress,
-//     handleVideoSpeed,
-//     toggleMute,
-//   };
-//   return (
-//     <div>
-     
-//     </div>
-//   )
-// }
-
-// export default Videodata
+export default VideoData;

@@ -202,7 +202,45 @@ z-index: 15;
   transform: scale(1.08);
 }
 
+.newsbtn{
+  border: 0px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.newsbtn:hover{
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
 
+.sidebtn{
+  border: 0px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.sidebtn:hover{
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.newsdata{
+  /* position: absolute; */
+  /* z-index: 6; */
+  margin-top: -20px;
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 10px;
+}
 
 /* Country Page css */
 

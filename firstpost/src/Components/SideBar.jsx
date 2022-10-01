@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import apikey from "./api";
 import { Link } from "react-router-dom";
+import VideoData from "./VideoData";
 
 function getDataSide() {
   return axios.get(
@@ -46,10 +47,10 @@ function SideBar() {
           >
             {el.description}
           </p>
-          <Link to={el.link}><button>READ MORE</button></Link>
+          <a href={el.link}><button className="sidebtn">READ MORE</button></a>
         </div>
       ))}
-      
+      <VideoData />
     </div>
   );
 }
