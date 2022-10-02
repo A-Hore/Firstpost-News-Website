@@ -86,6 +86,7 @@ const Country = () => {
                 fontSize: "25px",
                 textAlign: "justify",
                 padding: "0px 10px 0px 10px",
+                
               }}
             >
               {el.title}

@@ -2,6 +2,9 @@
   text-align: center;
  font-family: Arial, Helvetica, sans-serif;
 }
+.navbar11>img{
+  margin-right:140px ;
+}
 .navbar1{
 /* border: 1px solid red; */
 /* height: 60px; */
@@ -348,9 +351,13 @@ span{
   margin-top: -25px;
   margin-bottom: 20px
 }
-/* .country>h1+div+div{
-  border: 2px solid green;
+.country>h1+div+div{
+  /* border: 2px solid green; */
   border-radius: 10px;
-} */
+}
+.country>h1+div+div div>p{
+  /* border: 2px solid red; */
+  margin-bottom: 10px;
+}
 
 
