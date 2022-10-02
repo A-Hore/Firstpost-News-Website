@@ -4,7 +4,7 @@ import Loading from "../Components/Loading";
 import apikey from "../Components/api";
 import SliderShow from "../Components/SliderShow";
 import { SliderData } from "../Components/SliderData";
-import { Link } from "react-router-dom";
+
 
 function getData(page) {
   return axios.get(
@@ -102,7 +102,7 @@ const Country = () => {
                 : el.description.slice(1, 158)}
               ...
             </p>
-           <Link to={`/${el.pubDate}`}> <button className="newsbtn"> READ MORE</button></Link>
+           <a href={el.link}> <button className="newsbtn"> READ MORE</button></a>
           </div>
         </div>
       ))}
@@ -117,6 +117,7 @@ const Country = () => {
           NEXT
         </button>
       </div>
+      
     </div>
   );
 };

@@ -6,7 +6,7 @@ function Footer() {
     <div
       style={{
         borderTop: "6px solid rgb(89,89,88)",
-        marginTop:"3590px"
+        marginTop:"3000px"
       }}
     >
       <div
@@ -15,14 +15,14 @@ function Footer() {
           width: "70%",
           justifyContent: "space-between",
           alignItems: "center",
-          //   border: "1px solid green",
+            // border: "1px solid green",
           margin: "auto",
         }}
       >
         <div
           style={
             {
-              /*border:"1px solid green"*/
+              // border:"1px solid green"
             }
           }
         >
@@ -60,6 +60,7 @@ function Footer() {
           margin: "auto",
           display: "flex",
           textAlign: "justify",
+          marginBottom:"20px"
         }}
       >
         <div>
@@ -108,7 +109,7 @@ function Footer() {
           <p>Android</p>
         </div>
       </div>
-      <h4 style={{ fontSize: "15px" }}>
+      <h4 style={{ fontSize: "15px" ,marginBottom:"20px" }}>
         Copyright © 2022. Firstpost - All Rights Reserved.
       </h4>
       <p style={{ fontSize: "12px", marginTop: "-10px" }}>

@@ -25,15 +25,17 @@ function SideBar() {
         marginTop: "60px",
       }}
     >
-      <h4> MOST READ</h4>
+      <h4 style={{marginBottom:"40px"}}> MOST READ</h4>
       <div></div>
       {datas.map((el) => (
-        <div style={{ border: "1px solid grey" }}>
+        <div style={{ border: "1px solid grey" ,marginTop:"20px" }}>
           <h4
             style={{
               fontSize: "26px",
               textAlign: "initial",
               paddingLeft: "10px",
+              marginTop:"15px",
+              marginBottom:"40px"
             }}
           >
             {el.title}
@@ -43,6 +45,7 @@ function SideBar() {
               textAlign: "initial",
               paddingLeft: "10px",
               marginTop: "-20px",
+              marginBottom:"20px"
             }}
           >
             {el.description}

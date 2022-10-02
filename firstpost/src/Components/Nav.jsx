@@ -1,10 +1,15 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import HamSide from "./HamSide";
 
 function Nav() {
   return (
+    <>
+    
     <div className="navbar1">
+    <HamSide />
       <div className="navbar11">
+      
         <img
           src="https://www.firstpost.com/static/images/fp-desk-logo.png"
           alt="Logo"
@@ -29,6 +34,7 @@ function Nav() {
         />
       </div>
     </div>
+    </>
   );
 }
 

@@ -100,6 +100,7 @@ const Tech = () => {
                 : el.description.slice(1, 158)}
               ...
             </p>
+            <a href={el.link}> <button className="newsbtn"> READ MORE</button></a>
           </div>
         </div>
       ))}
